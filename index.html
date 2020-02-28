@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="app">hello</div>
+
+    <p>Search by User Name
+
+        <span class="dropdown"> <select id="ddlUserName" style="width: 150px;height:30px">
+
+
+            </select> </span>
+        <button type="button" class="btn btn-default" onclick="filterRecord()">
+            <span class="glyphicon glyphicon-search"></span> Search
+        </button>
+
+    </p>
+
+    <div class="Maintop">
+        <div class="detailtopleft">
+            Account
+        </div>
+        <div class="detailtop">
+          
+            <div class="righttopheader">
+                <span class="icon-embed gly-rotate-45" onclick="sortByDirection()"></span>
+                Available Cash
+            </div>
+            <div class="righttopheader">
+                Today's Change
+            </div>
+
+        </div>
+    </div>
+    <div class="Main">
+        <div id="account" class="detail">
+        </div>
+
+
+        <input class="loadmore" value="Load More >>" type="button" onclick="LoadData()">
+        </input>
+
+
+
+    </div>
+
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
