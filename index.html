@@ -12,6 +12,7 @@
 
 <body>
 
+   
     <div id="app">hello</div>
 
     <p>Search by User Name
@@ -20,7 +21,7 @@
 
 
             </select> </span>
-        <button type="button" class="btn btn-default" onclick="filterRecord()">
+        <button id="filterRecord" type="button" class="btn btn-default" >
             <span class="glyphicon glyphicon-search"></span> Search
         </button>
 
@@ -33,7 +34,7 @@
         <div class="detailtop">
           
             <div class="righttopheader">
-                <span class="icon-embed gly-rotate-45" onclick="sortByDirection()"></span>
+                <span id="spansortByDirection" class="icon-embed gly-rotate-45" >></span>
                 Available Cash
             </div>
             <div class="righttopheader">
@@ -47,7 +48,7 @@
         </div>
 
 
-        <input class="loadmore" value="Load More >>" type="button" onclick="LoadData()">
+        <input id="btnLoadData" class="loadmore" value="Load More >>" type="button" >
         </input>
 
 
@@ -55,7 +56,6 @@
     </div>
 
     </div>
-
 </body>
 <script src="script.js"></script>
 

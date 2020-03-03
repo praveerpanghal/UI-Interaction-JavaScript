@@ -31,10 +31,12 @@ AccountBanlance.forEach(i => {
     document.getElementById('ddlUserName').innerHTML = option;
 
 })
-function filterRecord() {
+document.getElementById("filterRecord").addEventListener("click",funcfilterRecord,false);
+let myVar;
+function funcfilterRecord() {
     let sel = document.getElementById('ddlUserName');
     myVar = sel.options[sel.selectedIndex].value;
-    console.log(myVar);
+ 
     filterData = AccountBanlance.filter(i => {
 
         return i.accountNumber == myVar;
@@ -54,6 +56,7 @@ function filterRecord() {
 }
 const appDiv = document.getElementById('app');
 appDiv.innerHTML = `<h1>JS Starter</h1>`;
+document.getElementById("btnLoadData").addEventListener("click",LoadData,false);
 
 function LoadData() {
     accountDiv.innerHTML = '';
@@ -65,7 +68,7 @@ function LoadData() {
 
     })
 }
-
+document.getElementById("spansortByDirection").addEventListener("click",sortByDirection,false);
 function sortByDirection(){
     AccountBanlance.reverse((a, b) => parseFloat(a.accountMoney) - parseFloat(b.accountMoney));
     LoadData();
