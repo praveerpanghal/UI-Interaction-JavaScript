@@ -24,7 +24,7 @@ AccountBanlance.forEach(i => {
 
     let accountNumberdiv = document.createElement("div");
     accountNumberdiv.setAttribute("class", "insidediv");
-    accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' + i.accountMoney + '</span>';
+    accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' + '$'+ i.accountMoney + '</span>';
     accountDiv.appendChild(accountNumberdiv);
     let accountMoneydiv = document.createElement("div");
     option += '<option value="' + i.accountNumber + '">' + i.userName + '</option>';
@@ -48,7 +48,7 @@ function funcfilterRecord() {
     filterData.forEach(i => {
         let accountNumberdiv = document.createElement("div");
         accountNumberdiv.setAttribute("class", "insidediv");
-        accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' + i.accountMoney + '</span>';
+        accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' + '$'+ i.accountMoney + '</span>';
         accountDiv.appendChild(accountNumberdiv);
     });
 
@@ -63,7 +63,7 @@ function LoadData() {
     AccountBanlance.forEach(i => {
         let accountNumberdiv = document.createElement("div");
         accountNumberdiv.setAttribute("class", "insidediv");
-        accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' + i.accountMoney + '</span>';
+        accountNumberdiv.innerHTML = '<span class="leftspan">' + i.accountNumber + '</span>' + '   ' + '<span class="rightspan">' +'$'+ i.accountMoney + '</span>';
         accountDiv.appendChild(accountNumberdiv);
 
     })

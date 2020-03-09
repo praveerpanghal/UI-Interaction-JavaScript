@@ -4,9 +4,7 @@ h1, h2 {
   
   .Maintop{
     display: flex;
-    border-top: 5px solid rgba(9, 110, 226, 0.87);
-    border-left: 5px solid rgba(9, 110, 226, 0.87);
-    border-right: 5px solid rgba(9, 110, 226, 0.87);
+    border: 5px solid #0882AF ;
     border-bottom: 3px solid gray;
     flex-wrap: wrap;
     height: 65px;
@@ -17,9 +15,8 @@ h1, h2 {
   }
   .Main{
     display: flex;
-    border-bottom: 5px solid rgba(9, 110, 226, 0.87);
-    border-left: 5px solid rgba(9, 110, 226, 0.87);
-    border-right: 5px solid rgba(9, 110, 226, 0.87);
+    border: 5px solid #0882AF;
+    border-top: 0;  
     flex-wrap: wrap;
   
   }
@@ -49,7 +46,7 @@ h1, h2 {
   }
   
   .insidediv{
-    font-size: 30px;
+    font-size: 25px;
     /* color: rgb(0, 153, 255); */
     border-bottom:3px solid lightgrey;
     padding: 30px;
@@ -66,7 +63,7 @@ h1, h2 {
     width: 100%;
     font-size: 24px;
     font-weight: bold;
-    color: rgba(9, 110, 226, 0.87);
+    color: #0882AF;
     height: 62px;
     padding-top: 4px;
     margin-top: -7px;;
@@ -74,6 +71,7 @@ h1, h2 {
   .righttopheader{
     text-align: right;
     font-weight: bold;
+    
   }
   
   .btn {
@@ -123,52 +121,28 @@ h1, h2 {
     
   }
   .leftspan{
-      color: blue;
+      color: rgb(4, 134, 185);
       float: left;
+      font-family: "Liberation Mono",sans-serif;
       
   }
   .rightspan{
-      color: black;
+      color: rgba(0, 0, 0, 0.671);
       float: right;
-  }
-
-  @font-face {
-    font-family: 'icomoon';
-    src:  url('fonts/icomoon.eot?2p3h9c');
-    src:  url('fonts/icomoon.eot?2p3h9c#iefix') format('embedded-opentype'),
-      url('fonts/icomoon.ttf?2p3h9c') format('truetype'),
-      url('fonts/icomoon.woff?2p3h9c') format('woff'),
-      url('fonts/icomoon.svg?2p3h9c#icomoon') format('svg');
-    font-weight: normal;
-    font-style: normal;
-    font-display: block;
-  }
+      font-size: 25px;
+      font-family:sans-serif;
+  } 
   
-  [class^="icon-"], [class*=" icon-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'icomoon' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-  
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-embed:before {
-    content: "\ea7f";
-  }
   .gly-rotate-45 {
     filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=0.5);
-    -webkit-transform: rotate(90deg);
-    -moz-transform: rotate(90deg);
-    -ms-transform: rotate(90deg);
-    -o-transform: rotate(90deg);
-    transform: rotate(90deg);
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(2700deg);
+    -o-transform: rotate(2700deg);
+    transform: rotate(270deg);
     display: inline-block;
+    color: #0882AF;
+    font-size: 15px;
+    
   }
   
